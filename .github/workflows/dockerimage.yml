@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: pre-lint-checks
       run: |
-        - docker pull hadolint/hadolint
-        - docker run hadolint/hadolint hadolint --version
+          docker pull hadolint/hadolint
+          docker run hadolint/hadolint hadolint --version
