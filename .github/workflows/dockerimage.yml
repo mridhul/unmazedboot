@@ -17,3 +17,5 @@ jobs:
       run: |
           docker pull hadolint/hadolint
           docker run hadolint/hadolint hadolint --version
+          docker run -i hadolint/hadolint hadolint - < linkchecker-Dockerfile
+
