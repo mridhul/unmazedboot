@@ -7,11 +7,13 @@ on:
 
 jobs:
 
-  build:
+  prelint-checks:
  
     runs-on: ubuntu-latest
  
     steps:
     - uses: actions/checkout@v1
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag unmazedboot:$(date +%s)
+    - name: pre-lint-checks
+      run:
+        - docker pull hadolint/hadolint
+        - docker run hadolint/hadolint hadolint --version
