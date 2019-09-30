@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@master
       
     - name: Hadolint Dockerfile
-      uses: burdzwastaken/hadolint-action@master
+      uses: cdssnc/docker-lint@master
       with:
         name: mridhul/unmazedboot
         HADOLINT_ACTION_DOCKERFILE_FOLDER: ${{ secrets.HADOLINT_ACTION_DOCKERFILE_FOLDER }}
