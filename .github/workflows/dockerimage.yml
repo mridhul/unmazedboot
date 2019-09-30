@@ -16,8 +16,8 @@ jobs:
       uses: actions/checkout@master
       
     - name: Hadolint Dockerfile
-      uses: docker://cdssnc/docker-lint-github-action@master
-      with:
-        name: mridhul/unmazedboot
-        HADOLINT_ACTION_DOCKERFILE_FOLDER: ${{ secrets.HADOLINT_ACTION_DOCKERFILE_FOLDER }}
+      run: |
+        docker pull hadolint/hadolint
+        docker run hadolint/hadolint hadolint --version
+        
 
