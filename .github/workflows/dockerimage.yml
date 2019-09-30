@@ -17,4 +17,7 @@ jobs:
       
     - name: Hadolint Dockerfile
       uses: burdzwastaken/hadolint-action@master
+      with:
+        name: mridhul/unmazedboot
+        HADOLINT_ACTION_DOCKERFILE_FOLDER: ${{ secrets.HADOLINT_ACTION_DOCKERFILE_FOLDER }}
 
