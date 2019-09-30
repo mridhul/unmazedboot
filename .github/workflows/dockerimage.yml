@@ -20,7 +20,7 @@ jobs:
         docker pull hadolint/hadolint
         docker run hadolint/hadolint hadolint --version
         ls -al samples/gradle-java-jdk8-x-jre11-custom/Dockerfile
-        docker run --rm -i hadolint/hadolint < samples/gradle-java-jdk8-x-jre11-custom/Dockerfile
+        docker run --rm -i hadolint/hadolint < samples/gradle-java-jdk8-jre8/Dockerfile
         
         
 
