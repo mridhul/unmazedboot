@@ -22,3 +22,4 @@ FROM intuit/unmazedboot-runner:openjdk-8u181-debian9-slim${UNMAZEDBOOT_RUNNER_VE
 
 # The image depends on the built artifacts by the stage
 # Add init scripts that are executed before the app starts
+EXPOSE 800000
